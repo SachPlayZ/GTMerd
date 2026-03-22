@@ -110,7 +110,7 @@ Respond ONLY with a valid JSON object matching this exact structure (no markdown
  * @returns {Promise<object>} - Parsed GTM strategy JSON
  */
 export async function generateGTMStrategy(companyData) {
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
   const prompt = buildPrompt(companyData);
 
