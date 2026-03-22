@@ -74,13 +74,7 @@ app.post('/api/generate-gtm', async (req, res) => {
     console.log(`[GTMerd] ✅ Done in ${elapsed}s\n`);
 
     return res.status(200).json({
-      success: true,
-      data: {
-        companyName: strategy.companyName,
-        pdfUrl,
-        generatedAt: new Date().toISOString(),
-        processingTimeSeconds: parseFloat(elapsed),
-      },
+      pdfUrl
     });
   } catch (err) {
     console.error('[GTMerd] ✗ Pipeline error:', err.message);

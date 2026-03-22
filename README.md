@@ -50,13 +50,7 @@ curl -X POST http://localhost:3000/api/generate-gtm \
 **Response:**
 ```json
 {
-  "success": true,
-  "data": {
-    "companyName": "Stripe",
-    "pdfUrl": "https://your-bucket.s3.us-east-1.amazonaws.com/gtm-strategy-stripe-<uuid>.pdf",
-    "generatedAt": "2026-03-22T10:45:00.000Z",
-    "processingTimeSeconds": 18.4
-  }
+  "pdfUrl": "https://your-bucket.s3.us-east-1.amazonaws.com/gtm-strategy-stripe-<uuid>.pdf"
 }
 ```
 
